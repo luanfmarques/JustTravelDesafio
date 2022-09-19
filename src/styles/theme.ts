@@ -8,8 +8,10 @@ export const theme = {
     brandColorGreen: "#2BD67B",
     brandColorBlack: "#0A2156",
     gray00: "#FFFFFF",
+    gray10: "#E7E9ED",
     gray40: "#9EA5B8",
     gray50: "#858FA6",
+    support01: "#4070F4",
     support05: "#3C4C70",
   },
   fontWeight: {
@@ -17,4 +19,5 @@ export const theme = {
     medium: 500,
     bold: 700,
   },
+  maxWidth: 1440,
 };
