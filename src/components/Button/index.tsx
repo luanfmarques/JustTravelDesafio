@@ -5,11 +5,22 @@ interface ButtonProps {
   children?: ReactNode;
   onClick?: () => void;
   outlined?: boolean;
+  disable?: boolean;
 }
 
-export const Button = ({ children, onClick, outlined }: ButtonProps) => {
+export const Button = ({
+  children,
+  onClick,
+  outlined,
+  disable,
+}: ButtonProps) => {
   return (
-    <ButtonDefault onClick={onClick} outlined={outlined}>
+    <ButtonDefault
+      data-testid="Button"
+      onClick={onClick}
+      outlined={outlined}
+      disable={disable}
+    >
       {children}
     </ButtonDefault>
   );

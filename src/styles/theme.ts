@@ -12,7 +12,9 @@ export const theme = {
     gray40: "#9EA5B8",
     gray50: "#858FA6",
     support01: "#4070F4",
+    support04: "#F03D3D",
     support05: "#3C4C70",
+    green: "#74E229",
   },
   fontWeight: {
     book: 450,
@@ -20,4 +22,7 @@ export const theme = {
     bold: 700,
   },
   maxWidth: 1440,
+  boxShadow: {
+    m: "0px 4px 8px rgba(11, 31, 77, 0.1)",
+  },
 };
