@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const CartButtonContainer = styled.div``;
+export const CartButtonContainer = styled.div`
+  position: relative;
+  button {
+    position: relative;
+    z-index: 11;
+  }
+`;
 
 export const CartButtonContent = styled.div`
   display: flex;
