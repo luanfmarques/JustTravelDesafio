@@ -1,17 +1,25 @@
 import React from "react";
 import { Button } from "../../Button";
 import CartIcon from "../../../assets/cart.svg";
-import { CartButtonContent, CartNumberContainer } from "./style";
+import {
+  CartButtonContent,
+  CartNumberContainer,
+  CartButtonContainer,
+} from "./style";
+import { CartModal } from "./CartModal";
+import { useCartContext } from "../../../contexts/Cart-provider";
 
 export const Cart = () => {
+  const { isOpen, openCart, cartQuantity } = useCartContext();
   return (
-    <>
-      <Button>
+    <CartButtonContainer>
+      <Button onClick={openCart}>
         <CartButtonContent>
           <CartIcon />
-          <CartNumberContainer>0</CartNumberContainer>
+          <CartNumberContainer>{cartQuantity}</CartNumberContainer>
         </CartButtonContent>
       </Button>
-    </>
+      {isOpen && <CartModal />}
+    </CartButtonContainer>
   );
 };
