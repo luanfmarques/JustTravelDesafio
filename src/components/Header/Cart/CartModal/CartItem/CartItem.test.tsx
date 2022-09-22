@@ -3,9 +3,9 @@ import { CartItem } from ".";
 import { CartContext } from "../../../../../contexts/Cart-provider";
 import { TicketsCartContext } from "../../../../../contexts/Tickets-provider";
 import { render, fireEvent } from "../../../../../test-utils";
-import { cartContextMock } from "../../../../../../__mocks__/cartContextMock";
-import { ticketContextMock } from "../../../../../../__mocks__/ticketContextMock";
-import { ticketMock } from "../../../../../../__mocks__/ticketMock";
+import { cartContextMock } from "../../../../../contexts/__mocks__/cartContextMock";
+import { ticketContextMock } from "../../../../../contexts/__mocks__/ticketContextMock";
+import { ticketMock } from "../../../../../contexts/__mocks__/ticketMock";
 import { ITicket } from "../../../../../interfaces/ITicket";
 
 function customRender(changeList: ITicket[]) {

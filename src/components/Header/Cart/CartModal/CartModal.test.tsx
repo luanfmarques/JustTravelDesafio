@@ -3,9 +3,9 @@ import { CartModal } from ".";
 import { CartContext } from "../../../../contexts/Cart-provider";
 import { TicketsCartContext } from "../../../../contexts/Tickets-provider";
 import { render } from "../../../../test-utils";
-import { cartContextMock } from "../../../../../__mocks__/cartContextMock";
-import { ticketContextMock } from "../../../../../__mocks__/ticketContextMock";
-import { ticketMock } from "../../../../../__mocks__/ticketMock";
+import { cartContextMock } from "../../../../contexts/__mocks__/cartContextMock";
+import { ticketContextMock } from "../../../../contexts/__mocks__/ticketContextMock";
+import { ticketMock } from "../../../../contexts/__mocks__/ticketMock";
 
 describe("Cart tests", () => {
   it("Must render cart with cart modal open", () => {
