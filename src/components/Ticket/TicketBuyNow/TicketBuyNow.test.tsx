@@ -1,6 +1,6 @@
 import React from "react";
 import { TicketBuyNow } from ".";
-import { cartContextMock } from "../../../../__mocks__/cartContextMock";
+import { cartContextMock } from "../../../contexts/__mocks__/cartContextMock";
 import { CartContext } from "../../../contexts/Cart-provider";
 import { render, fireEvent } from "../../../test-utils";
 

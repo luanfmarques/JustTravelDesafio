@@ -2,7 +2,7 @@ import React from "react";
 import { Cart } from ".";
 import { CartContext } from "../../../contexts/Cart-provider";
 import { render } from "../../../test-utils";
-import { cartContextMock } from "../../../../__mocks__/cartContextMock";
+import { cartContextMock } from "../../../contexts/__mocks__/cartContextMock";
 
 describe("Cart tests", () => {
   it("Must render cart", () => {
